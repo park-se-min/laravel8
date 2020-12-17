@@ -8,8 +8,19 @@ Route::get('/{id}/{asdf?}', function ($id='', $asdf='') {
 	echo $asdf;
 });
 
+
 Route::get('/', function () {
-    return view('welcome');
+
+	$a = ['aaa', 'b', 'c1'=>'c'];
+
+    return view('1', [
+		'name' => 'Victoria',
+		'name2' => 'asdf2',
+		'arr' => $a,
+		'arr2' => $a,
+		'arr3' => [],
+	]);
+    // return view('1');
 });
 
 // Route::resource('user', 'UserController')->name('artice');
