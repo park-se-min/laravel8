@@ -2,11 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/{id}/{asdf?}', function ($id='', $asdf='') {
-	echo $id;
-	echo "<br>";
-	echo $asdf;
-});
+// Route::get('/{id}/{asdf?}', function ($id='', $asdf='') {
+// 	echo $id;
+// 	echo "<br>";
+// 	echo $asdf;
+// });
 
 
 Route::get('/', function () {
@@ -21,6 +21,11 @@ Route::get('/', function () {
 		'arr3' => [],
 	]);
     // return view('1');
+});
+
+
+Route::get('/layout', function () {
+	return view('layout_test');
 });
 
 // Route::resource('user', 'UserController')->name('artice');
