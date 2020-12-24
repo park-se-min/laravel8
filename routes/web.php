@@ -1,4 +1,5 @@
 <?php
+namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Route;
 
@@ -9,20 +10,23 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-Route::get('/', function () {
+// Route::get('/', function () {
 
-	$a = ['aaa', 'b', 'c1'=>'c'];
+// 	$a = ['aaa', 'b', 'c1'=>'c'];
 
-    return view('1', [
-		'name' => 'Victoria',
-		'name2' => 'asdf2',
-		'arr' => $a,
-		'arr2' => $a,
-		'arr3' => [],
-	]);
-    // return view('1');
-});
+//     return view('1', [
+// 		'name' => 'Victoria',
+// 		'name2' => 'asdf2',
+// 		'arr' => $a,
+// 		'arr2' => $a,
+// 		'arr3' => [],
+// 	]);
+//     // return view('1');
+// });
 
+// Route::resource('/', 'welcomeController::class');
+// Route::resource('/welcome', 'welcomeController');
+Route::resource('/', PhotoController::class);
 
 Route::get('/layout', function () {
 	return view('layout_test');
