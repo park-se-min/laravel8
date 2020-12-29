@@ -45,7 +45,8 @@ class PhotoController extends Controller
      */
     public function show($id)
     {
-        //
+		//
+		return __METHOD__ ." (sssssssss)";
     }
 
     /**
@@ -79,6 +80,7 @@ class PhotoController extends Controller
      */
     public function destroy($id)
     {
-        //
+		//
+		return __METHOD__.' (ddddddd)';
     }
 }

@@ -24,9 +24,13 @@ use Illuminate\Support\Facades\Route;
 //     // return view('1');
 // });
 
-// Route::resource('/', 'welcomeController::class');
+// php artisan route:list
+Route::resource('/', welcomeController::class);
+Route::resource('/photo', PhotoController::class);
 // Route::resource('/welcome', 'welcomeController');
-Route::resource('/', PhotoController::class);
+// Route::resource('/', PhotoController::class);
+// Route::get('/', [welcomeController::class, 'index']);
+
 
 Route::get('/layout', function () {
 	return view('layout_test');

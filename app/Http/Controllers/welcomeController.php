@@ -8,6 +8,7 @@ class welcomeController extends Controller
 {
 	public function index()
 	{
+		// echo route('photo.index');
 		return view('layout_test');
 	}
 }

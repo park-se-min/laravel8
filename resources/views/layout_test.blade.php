@@ -3,6 +3,10 @@
 @section('content')
 	자식뷰
 
+	<br>
+	{{ route('photo.index') }}
+	<br>
+
 	@include('partials.footer')
 @endsection
 

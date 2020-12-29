@@ -6,6 +6,6 @@
 
 @section('script')
 	<script>
-		alert('2');
+		// alert('2');
 	</script>
 @endsection
