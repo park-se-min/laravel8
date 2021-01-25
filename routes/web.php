@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\Route;
 // 	]);
 //     // return view('1');
 // });
-echo 221;
+
 // php artisan route:list
 Route::resource('/', welcomeController::class);
 Route::resource('/photo', PhotoController::class);
